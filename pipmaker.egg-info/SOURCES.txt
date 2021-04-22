@@ -1,0 +1,7 @@
+README.md
+pipmaker.py
+setup.py
+pipmaker.egg-info/PKG-INFO
+pipmaker.egg-info/SOURCES.txt
+pipmaker.egg-info/dependency_links.txt
+pipmaker.egg-info/top_level.txt
