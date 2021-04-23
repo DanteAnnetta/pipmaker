@@ -97,12 +97,6 @@ class pipmaker:
 
 
 
-f = pipmaker()
-#description = "A simple tool to create modules and upload it in PyPi!"
-#f.compiler( description, "pipmaker" , "Dante Annetta" , "dannetta@lasalleflorida.edu.ar" )
-#f.update("https://github.com/DanteAnnetta/pipmaker")       
-
-f.test(os.getcwd())
   
         
         
