@@ -7,6 +7,7 @@ Created on Thu Apr 22 15:18:31 2021
 #the class script name must be the same as the module name
 import os
 
+
 class pipmaker:
     def __init__(self):
         try:
@@ -42,7 +43,7 @@ class pipmaker:
                 os.system("pip install tqdm")
         
 
-    def compiler(self, description , module , author , email ):
+    def compiler(self, description , module , author , email , github_url):
         self.module = module
         file = open("README.md" , "w")
         file.write("#" + description)
@@ -61,7 +62,7 @@ class pipmaker:
         file.writelines('     description="' + description + '",'+ os.linesep)
         file.writelines('     long_description=long_description,'+ os.linesep)
         file.writelines('     long_description_content_type="text/markdown",'+ os.linesep)
-        file.writelines('     url="' + "LINK" + '",'+ os.linesep) #the github repository url
+        file.writelines('     url="' + github_url + '",'+ os.linesep) #the github repository url
         file.writelines('     packages=setuptools.find_packages(),'+ os.linesep)
         file.writelines('     classifiers=['+ os.linesep)
         file.writelines('         "Programming Language :: Python :: 3",'+ os.linesep)
@@ -81,22 +82,9 @@ class pipmaker:
     #the link as the input of this function
     
     
-    def update(self , github_url):
-        file = open("setup.py")
-        content = file.read()
-        content2 = content.replace("LINK", github_url)
-        file.close()
-        file = open("setup.py" , "w")
-        file.write(content2)
-        file.close()
         
     def upload(self , username , password):
         os.popen("python -m twine  upload dist/*  -u " + username + " -p" + password)
     
-        
-
-
-
-  
         
         
