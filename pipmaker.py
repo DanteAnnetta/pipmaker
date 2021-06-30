@@ -40,7 +40,7 @@ class pipmaker:
     def compiler(self, description , module , author , email , github_url):
         self.module = module
         file = open("README.md" , "w")
-        file.write("#" + description)
+        file.write("# " + description)
         file.close()
         
         file = open("setup.py" , "w")
