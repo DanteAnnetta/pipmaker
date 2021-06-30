@@ -1,12 +1,6 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Apr 22 15:18:31 2021
-
-@author: Dante
-"""
 #the class script name must be the same as the module name
 import os
-
 
 class pipmaker:
     def __init__(self):
@@ -86,5 +80,9 @@ class pipmaker:
     def upload(self , username , password):
         os.popen("python -m twine  upload dist/*  -u " + username + " -p" + password)
     
+        
+
+
+
         
         
