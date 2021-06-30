@@ -14,5 +14,5 @@ Doing this, you only need a python script which must have a principal class with
 
 For upload your module to pypi.org, you need to create a new python script in the directory of your class script and use the following code:
 
-![Example Image](example.png)
+![Example Image](https://github.com/DanteAnnetta/pipmaker/blob/main/Example.png)
 
