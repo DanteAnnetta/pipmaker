@@ -3,7 +3,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
      name= "pipmaker",
-     version="0.1",
+     version="0.2",
      scripts=["pipmaker.py"],
      author="Dante Annetta",
      author_email="dannetta@lasalleflorida.edu.ar",
